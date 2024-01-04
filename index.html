@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Demandes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="backgroundvideo.mp4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>Gestion des Demandes</h1>
+        <div class="dropdown-container">
+            <label for="requestType">Choisir le type :</label>
+            <select id="requestType" onchange="updateRedirectButton()">
+                <option value="vacation">Demande de Vacances</option>
+                <option value="training">Demande de Formation</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button id="redirectButton" onclick="redirectUser()">Aller vers le Site</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gestion des Demandes. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
